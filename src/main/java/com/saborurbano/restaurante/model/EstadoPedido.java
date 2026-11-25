@@ -13,4 +13,7 @@ public enum EstadoPedido {
         this.descripcion = descripcion;
     }
 
+    public String getDescripcion() {
+        return descripcion;
+    }
 }
