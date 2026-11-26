@@ -43,7 +43,7 @@ public class Producto {
     private Boolean disponible = true;
 
     @NotNull(message = "Debe seleccionar una categoría")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
 

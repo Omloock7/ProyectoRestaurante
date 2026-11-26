@@ -49,7 +49,7 @@ public class Pedido {
     private EstadoPedido estado = EstadoPedido.PENDIENTE;
 
     @NotNull(message = "Debe seleccionar un cliente")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "cliente_id", nullable = false)
     private Cliente cliente;
 
